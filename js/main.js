@@ -102,9 +102,6 @@ class Producto {
         this.precio = precio;
         this.stockProcucto = stockProcucto;
      }
-    //  cambioStock(cantidadProducto) {
-    //     this.stockProcucto -= cantidadProducto;
-    // }; 
  }
 
 const producto1= new Producto("Naruto", "Figura", 3000, 10);
@@ -112,15 +109,6 @@ const producto2 = new Producto("Luffy", "Figura", 5000, 10);
 const producto3 = new Producto("Zoro", "Figura", 4000, 10);
 const producto4 = new Producto("Ichigo", "Figura", 3000, 10);
 const producto5 = new Producto("Hinata", "Figura", 3500, 10);
-
-// const carritoDeProducto = [];
-
-// const agregarProdCarrito = () => {
-//     let agregarProd = figura;
-
-//     carritoDeProducto.push(agregarProd);
-//     return carritoDeProducto;
-// }
 
 function inicio(){
 
@@ -150,7 +138,31 @@ function inicio(){
     }
     else{
         alert("Error dato ingresado");}
+
+}
+// const agregarProdCarrito = () => {
+//     let agregarProd = figura;
+
+//     carritoDeProducto.push(agregarProd);
+//     return carritoDeProducto;
+// }
+const carritoDeProducto = [];
+
+const agregarProd = () => {
+    let productoCarro = figura
+    carritoDeProducto.push(productoCarro);
+    alert(carritoDeProducto);
+    console.log(carritoDeProducto)
 }
 
+function stockProcuctoElegido(){
+    this.stockProcucto -= figura;
+    alert(this.stockProcucto);
+    console.log(this.stockProcucto)
+}
 
-console.log(inicio);
+inicio();
+stockProcuctoElegido();
+
+
+
