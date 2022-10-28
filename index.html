@@ -4,28 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <title>Tienda Impresion3D</title>
  </head>
+
 <body>
-    <section>
+    <header>
         <h1> GDimensiones3D</h1> 
-    </section>
+        <div class="buscador">
+            <div class="contadorProductos">
+                <button class="usuario" >
+                    <a href="#carrito" id="carritoHeader">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                    </a>
+                </button>
+                <p id="numeroContador"></p>
+            </div>
+                <button class="usuario" id="botonUsuario">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                        
+                        <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                </button>
+                <button class="usuario" id="cerrarSesion">Cerrar sesión</button>                
+        </div>
+    </header>
 
-    <section>
-        <h2> Productos Impresos</h2>
-        <p>venta de figuras impresos en 3D</p>
-    </section>
+    <div id="carrito">
+        <p class="titulo">Tienda</p>
+        <div id="carritoDeCompras"></div>
+        <div id="total"></div>
+        <div class="contentFinalizar"><button id="vaciarCarrito" class="botonFinalizar">Vaciar Carrito</button></div>
+        <div class="contentFinalizar"><button id="finalizar" class="botonFinalizar">Ver Total</button></div>
+        <div class="contentFinalizar"><button id="botonComprar" class="botonFinalizar">Comprar</button></div>
+    </div>
 
-    <section>
-        <img src="" alt="producto1">
-        <img src="" alt="producto2">
-        <img src="" alt="producto3">
-        <img src="" alt="producto4">
-        <img src="" alt="producto5">
-        <img src="" alt="producto6">
-    </section>
+    <div id="galeria">
+        <img src="./image/producto1.jpg" alt="producto1" class="img2">
+        <img src="./image/producto2.jpg" alt="producto2" class="img2">
+        <img src="./image/producto3.jpg" alt="producto3" class="img2">
+        <img src="./image/producto4.jpg" alt="producto4" class="img2">
+        <img src="./image/producto5.jfif" alt="producto5" class="img2">
+        <img src="./image/producto6.jpg" alt="producto6" class="img2">
+    </div>  
+
+
+    <div class="form">
  
+        <div class="contacto">
+            <h2>Contactanos</h2>
+            <p><b>Localidad:</b> Buenos Aires. General Las Heras.</p>
+            <p><b>Codigo Postal:</b> 1741</p>
+            <p><b>Tel:</b> 2227616161</p>
+            <p><b>Email:</b> gdimensiones3d@gmail.com</p>
+        </div>
 
+        <form action="#" class="">
+                  <label for="nombre">Nombre:</label>
+                  <input type="text" placeholder="Escribi tu nombre">
+                  <label for="email">Email:</label>
+                  <input type="email" placeholder="aaa@gmail.com" name="email">
+                  <label for="edad">Decinos tu Edad:</label>
+                  <input type="number" placeholder="DECIME TU EDAD">
+                  <label for="Preguntas">Espacio para su consulta:</label>
+                  <textarea placeholder="Escriba su consulta"></textarea>
+                  <input type="submit" value="Enviar">
+                  <input type="reset" value="Resetear">
+        </form>
+        
+    </div>
+ 
+<!--pie de pagina-->
+  
+<footer class="footer">
+
+    <div>
+        <h3 class="redes"> Redes Sociales </h3>
+    </div>
+
+    <div class="logitos">
+        <a class="logito1" href="https://www.instagram.com/hellbot3d/"target="_blank"> <img src="./image/icons8-instagram-48.png" alt="red social instagram"></a>
+        <a class="logito1" href="https://www.facebook.com/toysstorecolombia/"target="_blank"> <img src="./image/icons8-facebook-nuevo-48.png" alt="red social facebook"></a>
+        <a class="logito1" href="https://www.instagram.com/hellbot3d/"target="_blank"> <img src="./image/icons8-whatsapp-48.png" alt="contacto por medio de whatsapp"></a>
+    </div>
+
+</footer>
 
  <script src="./js/main.js"></script>   
 </body>

@@ -95,74 +95,74 @@
 
 
 
-class Producto {
-    constructor(nombreProducto, categoria, precio, stockProcucto) {
-        this.nombreProducto = nombreProducto;
-        this.categoria = categoria;
-        this.precio = precio;
-        this.stockProcucto = stockProcucto;
-     }
- }
+// class Producto {
+//     constructor(nombreProducto, categoria, precio, stockProcucto) {
+//         this.nombreProducto = nombreProducto;
+//         this.categoria = categoria;
+//         this.precio = precio;
+//         this.stockProcucto = stockProcucto;
+//      }
+//  }
 
-const producto1= new Producto("Naruto", "Figura", 3000, 10);
-const producto2 = new Producto("Luffy", "Figura", 5000, 10);
-const producto3 = new Producto("Zoro", "Figura", 4000, 10);
-const producto4 = new Producto("Ichigo", "Figura", 3000, 10);
-const producto5 = new Producto("Hinata", "Figura", 3500, 10);
+// const producto1= new Producto("Naruto", "Figura", 3000, 10);
+// const producto2 = new Producto("Luffy", "Figura", 5000, 10);
+// const producto3 = new Producto("Zoro", "Figura", 4000, 10);
+// const producto4 = new Producto("Ichigo", "Figura", 3000, 10);
+// const producto5 = new Producto("Hinata", "Figura", 3500, 10);
 
-function inicio(){
+// function inicio(){
 
-    let nombre = prompt("Cual es tu nombre");
-    let apellido = prompt("cual es tu apellido?");
-    let datosDeUsuarioCompleto = `Bienvenido a Gdimensiones3D ${nombre} ${apellido}!` ;
-    alert(datosDeUsuarioCompleto);
+//     let nombre = prompt("Cual es tu nombre");
+//     let apellido = prompt("cual es tu apellido?");
+//     let datosDeUsuarioCompleto = `Bienvenido a Gdimensiones3D ${nombre} ${apellido}!` ;
+//     alert(datosDeUsuarioCompleto);
     
-    let figura = parseInt(prompt("que figura vas a llevar?, 1:Naruto 2:Luffy, 3:Zoro, 4:Ichigo, 5: Hinata, 0: salir"));
-    if (figura == 1) {
-       alert(`elegiste la figura de ${producto1.nombreProducto} con un valor de ${producto1.precio}`)
-    }
-    else if (figura == 2) {
-        alert(`elegiste la figura de ${producto2.nombreProducto} con un valor de ${producto2.precio}`)
-    }
-    else if (figura  == 3) {
-        alert(`elegiste la figura de ${producto3.nombreProducto} con un valor de ${producto3.precio}`)
-    }
-    else if (figura == 4) {
-        alert(`elegiste la figura de ${producto4.nombreProducto} con un valor de ${producto4.precio}`)
-    }
-    else if (figura == 5) {
-        alert(`elegiste la figura de ${producto5.nombreProducto} con un valor de ${producto5.precio}`)
-    }
-    else if (figura == 0) {
-        alert(`Gracias, hasta luego ${nombre} ${apellido}`);
-    }
-    else{
-        alert("Error dato ingresado");}
+//     let figura = parseInt(prompt("que figura vas a llevar?, 1:Naruto 2:Luffy, 3:Zoro, 4:Ichigo, 5: Hinata, 0: salir"));
+//     if (figura == 1) {
+//        alert(`elegiste la figura de ${producto1.nombreProducto} con un valor de ${producto1.precio}`)
+//     }
+//     else if (figura == 2) {
+//         alert(`elegiste la figura de ${producto2.nombreProducto} con un valor de ${producto2.precio}`)
+//     }
+//     else if (figura  == 3) {
+//         alert(`elegiste la figura de ${producto3.nombreProducto} con un valor de ${producto3.precio}`)
+//     }
+//     else if (figura == 4) {
+//         alert(`elegiste la figura de ${producto4.nombreProducto} con un valor de ${producto4.precio}`)
+//     }
+//     else if (figura == 5) {
+//         alert(`elegiste la figura de ${producto5.nombreProducto} con un valor de ${producto5.precio}`)
+//     }
+//     else if (figura == 0) {
+//         alert(`Gracias, hasta luego ${nombre} ${apellido}`);
+//     }
+//     else{
+//         alert("Error dato ingresado");}
 
-}
+// }
 // const agregarProdCarrito = () => {
 //     let agregarProd = figura;
 
 //     carritoDeProducto.push(agregarProd);
 //     return carritoDeProducto;
 // }
-const carritoDeProducto = [];
+// const carritoDeProducto = [];
 
-const agregarProd = () => {
-    let productoCarro = figura
-    carritoDeProducto.push(productoCarro);
-    alert(carritoDeProducto);
-    console.log(carritoDeProducto)
-}
+// const agregarProd = () => {
+//     let productoCarro = figura
+//     carritoDeProducto.push(productoCarro);
+//     alert(carritoDeProducto);
+//     console.log(carritoDeProducto)
+// }
 
-function stockProcuctoElegido(){
-    this.stockProcucto -= figura;
-    alert(this.stockProcucto);
-    console.log(this.stockProcucto)
-}
+// function stockProcuctoElegido(){
+//     this.stockProcucto -= figura;
+//     alert(this.stockProcucto);
+//     console.log(this.stockProcucto)
+// }
 
-inicio();
-stockProcuctoElegido();
+// inicio();
+// stockProcuctoElegido();
 
 
 
