@@ -138,6 +138,36 @@ form{
     color: black;
 }
 
+.form{
+  display: grid;
+  margin: 5%;
+  margin-top: 10%;
+}
+
+.form-body{
+  margin: 2%;
+  justify-content: center;
+  text-align: center;
+}
+.form .form-control{
+  width: 100%;
+  margin: 2%;
+  height: 25px;
+  justify-content: center;
+  text-align: center;
+  background: transparent;
+  border: none;
+  font-size: 150%;
+  color: grey;
+  font-family: 'Times New Roman', Times, serif;
+}
+.form .form-control:hover::placeholder{
+  color: grey;
+}
+.form .form-control:focus{
+  color: grey;
+}
+
 .contacto{
     display: grid;
     margin: 10px;

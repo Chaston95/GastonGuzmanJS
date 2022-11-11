@@ -24,14 +24,14 @@
                     </a>
                 </button>
                 <p id="numeroContador"></p>
-            </div>
+                </div>
                 <button class="usuario" id="botonUsuario">
                     <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
                         
                         <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
                     </svg>
                 </button>
-                <button class="usuario" id="cerrarSesion">Cerrar sesión</button>                
+                               
         </div>
     </header>
 
@@ -44,14 +44,36 @@
         <div class="contentFinalizar"><button id="botonComprar" class="botonFinalizar">Comprar</button></div>
     </div>
 
-    <div id="galeria">
-        <img src="./image/producto1.jpg" alt="producto1" class="img2">
-        <img src="./image/producto2.jpg" alt="producto2" class="img2">
-        <img src="./image/producto3.jpg" alt="producto3" class="img2">
-        <img src="./image/producto4.jpg" alt="producto4" class="img2">
-        <img src="./image/producto5.jfif" alt="producto5" class="img2">
-        <img src="./image/producto6.jpg" alt="producto6" class="img2">
-    </div>  
+    <div id="buscador">
+        <input type="text" id="inputBuscador">
+        <svg id="botonBuscador" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+        width="48" height="48"
+        viewBox="0 0 48 48">
+        <path fill="#616161" d="M34.6 28.1H38.6V45.1H34.6z" transform="rotate(-45.001 36.586 36.587)"></path><path fill="#616161" d="M20 4A16 16 0 1 0 20 36A16 16 0 1 0 20 4Z"></path><path fill="#37474F" d="M36.2 32.1H40.2V44.400000000000006H36.2z" transform="rotate(-45.001 38.24 38.24)"></path><path fill="#64B5F6" d="M20 7A13 13 0 1 0 20 33A13 13 0 1 0 20 7Z"></path><path fill="#BBDEFB" d="M26.9,14.2c-1.7-2-4.2-3.2-6.9-3.2s-5.2,1.2-6.9,3.2c-0.4,0.4-0.3,1.1,0.1,1.4c0.4,0.4,1.1,0.3,1.4-0.1C16,13.9,17.9,13,20,13s4,0.9,5.4,2.5c0.2,0.2,0.5,0.4,0.8,0.4c0.2,0,0.5-0.1,0.6-0.2C27.2,15.3,27.2,14.6,26.9,14.2z"></path>
+        </svg>
+        </svg>
+    </div>
+    
+        <!--GALERIA--> 
+        <div>
+            <h1 class="titulo">TIENDA</h1>
+            
+            
+    
+            <div id="galeria"></div>  
+            
+        </div>
+        
+        <!--TIENDA-->
+        
+        <div id="carrito">
+            <p class="titulo">CARRITO</p>
+            <div id="carritoDeCompras"></div>
+            <div id="total"></div>
+            <div class="contentFinalizar"><button id="vaciarCarrito">Vaciar Carrito</button></div>
+            <div class="contentFinalizar"><button id="finalizar">Ver Total</button></div>
+            <div class="contentFinalizar"><button id="botonComprar" class="botonFinalizar">Comprar</button></div>
+        </div>
 
 
     <div class="form">
@@ -64,18 +86,35 @@
             <p><b>Email:</b> gdimensiones3d@gmail.com</p>
         </div>
 
-        <form action="#" class="">
-                  <label for="nombre">Nombre:</label>
-                  <input type="text" placeholder="Escribi tu nombre">
-                  <label for="email">Email:</label>
-                  <input type="email" placeholder="aaa@gmail.com" name="email">
-                  <label for="edad">Decinos tu Edad:</label>
-                  <input type="number" placeholder="DECIME TU EDAD">
-                  <label for="Preguntas">Espacio para su consulta:</label>
-                  <textarea placeholder="Escriba su consulta"></textarea>
-                  <input type="submit" value="Enviar">
-                  <input type="reset" value="Resetear">
-        </form>
+            <form action="#" class="">
+
+                        <h1 class="titulo">CONTACTANOS</h1>
+                        <div class= "mensaje">
+                        <div class="form-body">
+                            <div class="col">
+                                <input type="text" class="form-control" id="formNombre" placeholder="Nombre" name="nombre">
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control" id="formApellido" placeholder="Apellido" name="apellido">
+                            </div>
+                            <div class="col">
+                                <input type="email" class="form-control" id="formMail" placeholder="Mail" name="mail">
+                            </div>
+                            <div class="col">
+                                <input type="number" class="form-control" id="formNumero" placeholder="Teléfono" name="numero">
+                            </div>
+                            <div class="form-floating">
+                                <textarea class="form-control" placeholder="Escriba aquí" id="formText" style="height: 100px" name="texto"></textarea>
+                                <label for="floatingTextarea2"></label>
+                            </div>
+                            <div>
+                                <button type="submit" class="botonComprar" id="botonContacto">Enviar</button>
+                            </div>                                          
+                        </div>
+                        </div>
+            
+            </form>
+
         
     </div>
  

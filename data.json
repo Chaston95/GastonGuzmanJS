@@ -1,0 +1,8 @@
+[
+    {"nombre": "SOPORTE DE CELULAR Y CARGADOR", "precio": 800, "img": "images/soporte_cel.jpg", "descripcion": "soporte para celular y cargador."},
+    {"nombre": "SOPORTE DE MESA", "precio": 600, "img": "images/soporte_cel2.jpg", "descripcion": "soporte de mesa para celular."},
+    {"nombre": "BOCINA DE CELULAR", "precio": 800, "img": "images/bocina_cel.jpg", "descripcion": "bocina amplificadora para celular."},
+    {"nombre": "SOPORTE DE BOLSAS", "precio": 500, "img": "images/soporte_bolsas.jpg", "descripcion": "soporte para llevar bolsas de compras."},
+    {"nombre": "CAJA DE MASOS", "precio": 300, "img": "images/caja_maso.jfif", "descripcion": "caja para guardar los masos de cartas."},
+    {"nombre": "ORGANIZADOR DE UTILES", "precio": 1200, "img": "images/organizador.jpg", "descripcion": "organizador de escritrorio y utiles."}
+]
